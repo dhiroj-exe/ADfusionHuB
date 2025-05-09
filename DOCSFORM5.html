@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MOVIE FORM 1</title>
+    </head>
+    <body bgcolor="#ADD8E6">
+            <p align=center>
+                <center><h1><font color="" face="" size=""> SPECIAL </font></h1></center>
+            </p>
+         <table></table>   <form align= center method="post" action="thank you mv.html">
+            <p>Name:
+                <input type= "text" name= "persons-name" size= "40" maxlength="40">
+               <input type= "hidden" name= "recipent" size= "40" maxlength= "40">
+               </p>
+               <p>Select your Show Date :
+                <select name = "date">
+                  <option value="13" required>13th  NOV 2024
+                   <option value = "15"required> 15th DEC 2024
+                <option value="30"required>30th DEC 2024
+                <option value="10"required> 10th JAN 2025
+                <option value="14"required>14th FEB 2025
+                </select>
+                <p>Select your Show Timing :
+                    <select name = "time">
+                      <option value="8" required>9:00-11:30
+                       <option value = "11"required> 12:00-15:00
+                    <option value="14"required>14:00-16:00
+                    <option value="17:30"required>16:30-19:00
+                    <option value="19:00"required>19:00-21:00
+                    </select>
+                
+            
+                <p>Number Of Seats:
+                    <input type="number" id="tickets" name="tickets" min="1" max="5" required>
+                    </p>
+                                    <p> Payment Option:
+                    <input type="radio" name="payment" value="cr and deb" required> Credit or Debit Card
+                    <input type="radio" name="payment" value="Net Banking" required>Net Banking 
+                    <input type="radio" name="payment" value="UPI" required>UPI
+                    <input type="radio" name="payment" value="Fampay" required>Fampay
+                    </p>
+                    <input type = "checkbox" name= "Terms and condition applied" value= "ok" required>I Agree to Terms And Conditions
+                    <p>
+                        <input type="submit" name="request" value="Submit This Form">
+                        <input type="reset" name="Clear" value="Clear Form and Start Over">
+                        </p>
+
+
+            </form>
+        </body>
+        </html>
+

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif; /* Base font */
+    background-color: #282c34; /* Dark background */
+    color: #f8f9fa; /* Light text color for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 20px;
+    color: #007BFF; /* Highlight title in blue */
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    justify-content: space-between; /* Evenly space the movies */
+}
+
+.movie {
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f8f9fa; /* Light background for movie cards */
+    text-align: center;
+    flex: 1 1 calc(30% - 30px); /* Responsive flex item */
+    box-sizing: border-box; /* Include padding and border in total width */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.movie:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.movie-image {
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Crop the image to fill the box */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.movie h2 {
+    color: #333;
+    font-size: 1.5em; /* Increased font size for movie titles */
+}
+
+.price {
+    font-size: 1.5em; /* Larger font size for price */
+    color: #28a745; /* Highlight price in green */
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #ff0000; /* Button color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
